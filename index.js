@@ -3,7 +3,7 @@ const bot = new TeleBot('262060499:AAHX2loPHB-kv40OedIwVOrGUrhmQTVc-jI');
 
 // Use ask module
 // bot.use(require('../HackNRoll2017/node_modules/telebot/modules/ask.js'));
-bot.use(require('../HackRoll2017/node_modules/telebot/modules/ask.js'));
+bot.use(require('./node_modules/telebot/modules/ask.js'));
 
 // Command keyboard
 const markup = bot.keyboard([
@@ -24,7 +24,7 @@ bot.on(['/start', '/help'], function(msg) {
 
 });
 
-On command "about"
+//On command "about"
 bot.on('/about', function(msg) {
 
   let text = 'This bot is created for NUS HackNRoll2017. Developed by Leonard and Brandon Yeo';
